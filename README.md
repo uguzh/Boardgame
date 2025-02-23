@@ -1,17 +1,19 @@
-# BoardgameListingWebApp
+# BoardGame - Full-Stack Web Application 🎲
 
-Click [HERE](http://ec2-18-116-69-84.us-east-2.compute.amazonaws.com:8080/) to try the app!
+This web application allows users to **browse, add, and review board games**. While anyone can view the game list and reviews, users must log in to contribute.
 
-## Description
+- View a list of board games and their reviews.
+- Users can add board games and write reviews.
+- Managers have additional permissions to edit or delete reviews.
 
-**Board Game Database Full-Stack Web Application.**
-This web application displays lists of board games and their reviews. While anyone can view the board game lists and reviews, they are required to log in to add/ edit the board games and their reviews. The 'users' have the authority to add board games to the list and add reviews, and the 'managers' have the authority to edit/ delete the reviews on top of the authorities of users.  
+Built with **Java, Spring Boot, Thymeleaf, HTML, CSS, JavaScript, and Bootstrap,** using **H2 in-memory database** for data storage.
+
+🚀 Get started by exploring or contributing to the game database!
 
 ## Technologies
 
 - Java
 - Spring Boot
-- Amazon Web Services(AWS) EC2
 - Thymeleaf
 - Thymeleaf Fragments
 - HTML5
@@ -25,7 +27,7 @@ This web application displays lists of board games and their reviews. While anyo
 - Twitter Bootstrap
 - Maven
 
-## Features
+## Features 🚀
 
 - Full-Stack Application
 - UI components created with Thymeleaf and styled with Twitter Bootstrap
@@ -44,12 +46,36 @@ This web application displays lists of board games and their reviews. While anyo
 - Schema.sql file to customize the schema and input initial data
 - Thymeleaf Fragments to reduce redundancy of repeating HTML elements (head, footer, navigation)
 
-## How to Run
+## How to Run 🚀
 
-1. Clone the repository
-2. Open the project in your IDE of choice
-3. Run the application
-4. To use initial user data, use the following credentials.
-  - username: bugs    |     password: bunny (user role)
-  - username: daffy   |     password: duck  (manager role)
-5. You can also sign-up as a new user and customize your role to play with the application! 😊
+Follow these steps to set up and run the BoardGame application:
+
+### 1️⃣ Clone the Repository  
+```sh
+git clone https://github.com/praduman8435/Boardgame.git
+cd Boardgame
+```
+
+### 2️⃣ Open the Project in Your IDE
+You can use **IntelliJ IDEA, Eclipse,** or any other Java-supported IDE.
+
+### 3️⃣ Run the Application
+- If using Maven, run:
+  ```bash
+  mvn spring-boot:run
+  ```
+- Or run the main class in your IDE:
+  ```sh
+  BoardGameDatabaseApplication.java
+  ```
+  
+### 4️⃣ Login with Default Users  
+Use these pre-configured credentials to log in:  
+| **Role**   | **Username** | **Password** |
+|-----------|------------|------------|
+| User      | `bugs`     | `bunny`    |
+| Manager   | `daffy`    | `duck`     |
+
+### 5️⃣ Create Your Own Account!  
+You can also **sign up as a new user** and customize your role to explore the application. 🎲  
+
