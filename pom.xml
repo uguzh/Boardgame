@@ -7,7 +7,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.1.5</version> <!-- Updated to Spring Boot 3.x -->
+        <version>2.5.6</version>
         <relativePath/> <!-- Lookup parent from repository -->
     </parent>
 
@@ -19,7 +19,7 @@
     <packaging>jar</packaging>
 
     <properties>
-        <java.version>21</java.version> <!-- Java 21 -->
+        <java.version>11</java.version>
         <jacoco.version>0.8.7</jacoco.version>
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
@@ -53,7 +53,7 @@
         <!-- Thymeleaf Extras -->
         <dependency>
             <groupId>org.thymeleaf.extras</groupId>
-            <artifactId>thymeleaf-extras-springsecurity6</artifactId> <!-- Updated for Spring Boot 3.x -->
+            <artifactId>thymeleaf-extras-springsecurity5</artifactId>
         </dependency>
 
         <!-- Database -->
@@ -67,7 +67,6 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.30</version> <!-- Updated Lombok version -->
             <optional>true</optional>
         </dependency>
 
@@ -127,20 +126,6 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
-
-            <!-- Maven Compiler Plugin -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.0</version>
-                <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                    <compilerArgs>
-                        <arg>--enable-preview</arg> <!-- Required for preview features in Java 21 -->
-                    </compilerArgs>
-                </configuration>
             </plugin>
         </plugins>
     </build>
