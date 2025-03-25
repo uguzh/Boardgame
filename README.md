@@ -3,6 +3,8 @@
 ## 📌 Overview
 This project implements a **fully automated, secure, and scalable CI/CD pipeline** for enterprise applications. It integrates **DevSecOps best practices** to ensure high availability, security, and observability in Kubernetes deployments.
 
+![](boardgame_final.jpg)
+
 ## 🎯 Key Features
 - **End-to-End CI/CD Automation** – Jenkins automates the entire pipeline from code commit to deployment.
 - **Enterprise-Grade Security** – Continuous security scanning with **SonarQube**, **Trivy**, and **KubeAudit**.
