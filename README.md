@@ -1,80 +1,31 @@
-# BoardGame - Full-Stack Web Application 🎲
+# 🚀 Corporate-Grade CI/CD Pipeline with DevSecOps
 
-This web application allows users to **browse, add, and review board games**. While anyone can view the game list and reviews, users must log in to contribute.
+## 📌 Overview
+This project implements a **fully automated, secure, and scalable CI/CD pipeline** for enterprise applications. It integrates **DevSecOps best practices** to ensure high availability, security, and observability in Kubernetes deployments.
 
-- View a list of board games and their reviews.
-- Users can add board games and write reviews.
-- Managers have additional permissions to edit or delete reviews.
+## 🎯 Key Features
+- **End-to-End CI/CD Automation** – Jenkins automates the entire pipeline from code commit to deployment.
+- **Enterprise-Grade Security** – Continuous security scanning with **SonarQube**, **Trivy**, and **KubeAudit**.
+- **Artifact Management** – Nexus is used to store and manage build artifacts efficiently.
+- **Containerized Deployments** – Dockerized applications are built, scanned, and deployed to **Kubernetes**.
+- **Full Observability** – Real-time monitoring with **Prometheus** & **Grafana** for proactive issue resolution.
+- **Zero Manual Intervention** – Completely hands-off from development to production.
 
-Built with **Java, Spring Boot, Thymeleaf, HTML, CSS, JavaScript, and Bootstrap,** using **H2 in-memory database** for data storage.
+## 🏗️ Tech Stack & Tools Used
+- **CI/CD Automation**: Jenkins 🛠️
+- **Security Scanning**: SonarQube 🔍 | Trivy 🦠 | KubeAudit 🔒
+- **Artifact Repository**: Nexus 📦
+- **Containerization & Orchestration**: Docker 🐳 | Kubernetes 🚢
+- **Monitoring & Observability**: Prometheus 📈 | Grafana 📊
 
-🚀 Get started by exploring or contributing to the game database!
+## 🔧 Pipeline Workflow
+1. **Code Commit & Push** – Developers push code to GitHub.
+2. **Jenkins Triggers Build** – Automated pipeline execution begins.
+3. **Code Quality & Security Scans** – SonarQube, Trivy, and KubeAudit ensure clean, secure code.
+4. **Build & Artifact Management** – Maven compiles code, artifacts are stored in Nexus.
+5. **Containerization & Image Scanning** – Docker builds images, scans for vulnerabilities, and pushes to DockerHub.
+6. **Kubernetes Deployment** – Jenkins deploys the application to Kubernetes.
+7. **Monitoring & Notifications** – Prometheus & Grafana track system health, with email alerts for failures.
 
-## Technologies
-
-- Java
-- Spring Boot
-- Thymeleaf
-- Thymeleaf Fragments
-- HTML5
-- CSS
-- JavaScript
-- Spring MVC
-- JDBC
-- H2 Database Engine (In-memory)
-- JUnit test framework
-- Spring Security
-- Twitter Bootstrap
-- Maven
-
-## Features 🚀
-
-- Full-Stack Application
-- UI components created with Thymeleaf and styled with Twitter Bootstrap
-- Authentication and authorization using Spring Security
-  - Authentication by allowing the users to authenticate with a username and password
-  - Authorization by granting different permissions based on the roles (non-members, users, and managers)
-- Different roles (non-members, users, and managers) with varying levels of permissions
-  - Non-members only can see the boardgame lists and reviews
-  - Users can add board games and write reviews
-  - Managers can edit and delete the reviews
-- JUnit test framework for unit testing
-- Spring MVC best practices to segregate views, controllers, and database packages
-- JDBC for database connectivity and interaction
-- CRUD (Create, Read, Update, Delete) operations for managing data in the database
-- Schema.sql file to customize the schema and input initial data
-- Thymeleaf Fragments to reduce redundancy of repeating HTML elements (head, footer, navigation)
-
-## How to Run 🚀
-
-Follow these steps to set up and run the BoardGame application:
-
-### 1️⃣ Clone the Repository  
-```sh
-git clone https://github.com/praduman8435/Boardgame.git
-cd Boardgame
-```
-
-### 2️⃣ Open the Project in Your IDE
-You can use **IntelliJ IDEA, Eclipse,** or any other Java-supported IDE.
-
-### 3️⃣ Run the Application
-- If using Maven, run:
-  ```bash
-  mvn spring-boot:run
-  ```
-- Or run the main class in your IDE:
-  ```sh
-  BoardGameDatabaseApplication.java
-  ```
-  
-### 4️⃣ Login with Default Users  
-Use these pre-configured credentials to log in:  
-| **Role**   | **Username** | **Password** |
-|-----------|------------|------------|
-| User      | `bugs`     | `bunny`    |
-| Manager   | `daffy`    | `duck`     |
-
-### 5️⃣ Create Your Own Account!  
-You can also **sign up as a new user** and customize your role to explore the application. 🎲  
-
+## 📖 Read the Full Blog  
+For a detailed walkthrough of this project, check out my blog post: [**ultimate-corporate-grade-devsecops-pipeline**](https://itspraduman.hashnode.dev/ultimate-corporate-grade-devsecops-pipeline)  
